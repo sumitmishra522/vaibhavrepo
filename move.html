@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            perspective: 300px;
+        }
+
+        .home{
+            background-image: url(home.gif);
+            background-repeat: no-repeat;
+            height: 300px;
+            width: 400px;
+            position: relative;
+            /* border: 1px dotted gray; */
+            background-size: cover;
+            left: 850px;
+            bottom: 300px;
+            top: -180px;
+            transform: rotate3d(0,1,0, -110deg);
+           
+
+        }
+
+        img{
+            width: 130px;
+            animation: move 2s linear  infinite;
+            position: relative;
+            top: 120px;
+           
+            z-index: 1;
+        }
+
+        @keyframes move {
+            0% {
+                transform:  translateX(0px);
+                 
+            }
+            75% { transform: translateX(880px); }
+            100% {
+                transform: translateX(950px) scale(0.3);
+                
+               
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <img src="move.gif" alt="">
+
+    <div class="home">
+        
+    </div>
+
+</body>
+</html>
